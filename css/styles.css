@@ -222,12 +222,25 @@ list-style: none;
 
 /* ----------- HERO ------------------ */
 .hero {
- 
     padding-top: 200px;
     padding-bottom: 200px;
-   
 
-    background-color: #2F303A;
+    background-color: #C4C4C4;
+
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                      url('../images/hero-img.jpg');
+
+
+    
+
   
 }
 .hero-title {
@@ -259,6 +272,8 @@ list-style: none;
 }
 
 
+
+
 /* -------------- ADVANT -------------- */
 .advant-title {
     margin-bottom: 10px;
@@ -275,8 +290,27 @@ list-style: none;
 
 .advant-item {
     min-width: 270px;
+    
 }
- 
+
+.advant-item::before {
+   
+    display: block;
+    content: "";
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--secondary-bg-color);
+   
+    background-image: url('../images/group.svg');
+    
+    
+    
+
+    margin-bottom: 30px;
+          
+    /* background-image: url('../images/antenna.png');*/
+}
 /*.advant-item:not(:last-child) {
     margin-right: 30px;
     outline: 2px solid red;
